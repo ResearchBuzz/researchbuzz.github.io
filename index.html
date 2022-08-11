@@ -1,92 +1,215 @@
+ <!DOCTYPE html>
+<!-- Template by html.am -->
 <html>
-  <head>ResearchBuzz Search Gizmos</head>
-  <body>
-<h2>
-    Hi. This is the home of the ResearchBuzz Search Gizmos, as kindly hosted by GitHub Pages.
-</h2>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>ResearchBuzz Search Gizmos</title>
+		<style type="text/css">
+			html, #page { padding:0; margin:0;}
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			h1, h2, h3, h4, h5, h6 {color:darkblue;}
+			#page { background:#fff;}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+						
+			/* Logo */
+			#logo { padding:0; width:auto; float:left;}
+			#logo h1 a, h1 a:hover { color:darkblue; text-decoration:none;}
+			#logo h1 span { color:#24592c;}
 
-  <p>I've been making little programs to help me with Web search and related tasks for years. Until recently, however, I used Google Sheets as my platform;
-    I didn't know how to make a Web app. Now that I'm learning JavaScript, I can translate some of my Google Sheets tools to tiny sharable Web apps and share them with you.
-  </p>
+			/* Header */
+			#header { background:#fff; }
+			#header-inner { margin:0 auto; padding:0; width:970px;}
+			
+			/* Feature */
+			.feature { background:blue;padding:18px;}
+			.feature-inner { margin:auto;width:970px; }
+			.feature-inner h1 {color:#E9E9FC;font-size:32px;}
+			
+			/* Menu */
+			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:blue; text-decoration:none;}
+			#top-nav ul li.active a, #top-nav ul li a:hover { color:#d3d3f9;}
+			
+			/* Content */
+			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
+			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar .article {  font-size: 1.25em; color: black; margin:0 0 24px; padding:0 20px 0 15px; }
+			#content #sidebar { background-color:#ECFFDC; padding:0; float:left; width:200px;}
+			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+			#content #sidebar .widget h3 a { text-decoration:none;}
+			#content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#959595;}
+			#content #sidebar .widget ul li { margin:0;}
+			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
+			#content #sidebar .widget ul li a {font-size: 1.25em; color:black; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+			#content #sidebar .widget ul li a:hover { color:#d3d3f9; font-weight:bold; text-decoration:none;}
+			
+			/* Footerblurb */
+			#footerblurb { background:#d3d3f9;color:blue;}
+			#footerblurb-inner { margin:0 auto; width:922px; padding:24px;}
+			#footerblurb .column { margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
+			
+			/* Footer */
+			#footer { background:#fff;}
+			#footer-inner { margin:auto; text-align:center; padding:12px; width:922px;}
+			#footer a {color:blue;text-decoration:none;}
+			
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+		</style>
+		
 
-<p>I have made hosted versions of all my little tools and invite you to goof around with them. Please note that the designs are very basic: it's just instructions and a form. </p>
+	</head>
+	<body>
+		<div id="page">
+			<header id="header">
+				<div id="header-inner">	
+					<div id="logo">
+						<h1><a href="#">ResearchBuzz<span>Search Gizmos</span></a></h1>
+					</div>
+					<div id="top-nav">
+						<ul>
+						<li><a href="https://github.com/ResearchBuzz">ResearchBuzz GitHub Home</a></li>
+						<li><a href="https://www.researchbuzz.me">ResearchBuzz Main Site</a></li>
+						<li><a href="https://www.rbfirehose.com">ResearchBuzz Firehose</a></li>
+						</ul>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</header>
+			<div class="feature">
+				<div class="feature-inner">
+				<h1>Happy Little Search Tools </h1>
+				</div>
+			</div>
+		
+	
+			<div id="content">
+				<div id="content-inner">
+				
+					<main id="contentbar">
+						<div class="article">
+							
+<h2></h2>
 
-<p>Stay tuned: I've only gotten started learning JavaScript and Python and there are about a billion things I'd like to make.</p>
+<h3>I've been making little programs to help me with Web search and related tasks for years. Until recently, however, I used Google Sheets as my platform;
+    I didn't know how to make a Web app. Now that I'm learning JavaScript, I can translate some of my Google Sheets tools to tiny Web apps and share them with you.</h3>
 
-<p>Here are the tools:</p>
+<p>The tools are listed in the left column. They're all free to use. Sometimes an API key might be required, but I'll point you to where you can get them (usually they're free or free-to-a-limit) and all you'll have to do is paste them into a box.</p>
 
-<ul>
-<li>
-<b>Twitter Receipts:</b> -- <a href="https://researchbuzz.github.io/Twitter-Receipts/index.html">https://researchbuzz.github.io/Twitter-Receipts/index.html</a><br><br> 
-  Twitter Receipts has you enter a Twitter handle and a date, then queries The Wayback Machine for the closest snapshot of the Twitter handle to that date. The Wayback Machine page opens in a new URL. 
-  Sometimes the API is a little slow so give it a few seconds.<br><br>
+<p>I come up with ideas for new search tools approximately 999 times a day, so stay tuned for more, and thanks for visiting.</p>
 
-  GitHub files - <a href="https://github.com/ResearchBuzz/Twitter-Receipts">https://github.com/ResearchBuzz/Twitter-Receipts</a>
-</li>
-<br>
-<br>
-<li>
-  <b>Back That Ask Up:</b> -- <a href="https://researchbuzz.github.io/Back-That-Ask-Up-/">https://researchbuzz.github.io/Back-That-Ask-Up-/</a><br><br> 
-  Enter a Google News query and the number of days/months/years' worth of the most recent news items you want to eliminate.
-  BTAU will construct a date-restricted search query in Google News and open it in a new window.
-  
-  <br><br>
-  
-    GitHub files - <a href="https://github.com/ResearchBuzz/Back-That-Ask-Up-">https://github.com/ResearchBuzz/Back-That-Ask-Up-</a>
-  </li>
 
-  <br>
-<br>
-  <li>
-  <b>Kebberfegg:</b> -- <a href="https://researchbuzz.github.io/Kebberfegg/">https://researchbuzz.github.io/Kebberfegg/</a><br><br> 
-  JS/HTML tool that ets you make keyword-based RSS feeds for about a dozen different resouces including Reddit, Google News, Bing News, the US Federal Register, and ClinicalTrials.gov.
-  
-  <br><br>
-  
-    GitHub files - <a href="https://github.com/ResearchBuzz/Kebberfegg">https://github.com/ResearchBuzz/Kebberfegg</a>
-  </li>
 
-  <br>
-<br>
-  
-  
-<li>
-  <b>The Anti-Bullseye Name Search</b> -- <a href="https://researchbuzz.github.io/The-Anti-Bullseye-Name-Search/">https://researchbuzz.github.io/The-Anti-Bullseye-Name-Search/</a><br><br> 
-  TABNS takes a name and generates a Google search that searches for the name in reverse order (Lastname Firstname) and specifically excludes the most common expression of firstname lastname. It changes the tenor of the search results completely, surfacing many more legal- and data- based results.<br><br>
-It also removes a lot of commercial clutter from your search (Amazon, eBay, Pinterest, etc) and gives you the option of adding focusing keywords to the name search. 
+					</main>
+					
+					<nav id="sidebar">
+						<div class="widget">
+							<h3>ResearchBuzz Search Gizmos</h3>
+							<ul>
+							<li><a href="https://researchbuzz.github.io/politician-parade-Twitter/">Politician Parade: Twitter</a></li>
+							<li><a href="https://researchbuzz.github.io/politician-parade/">Politician Parade: Google News</a></li>
+							<li><a href="https://researchbuzz.github.io/Time-Sliced-News-Search/">Time-Sliced News Search</a></li>
+							<li><a href="https://researchbuzz.github.io/Kebberfegg/">Kebberfegg RSS Feed Generator</a></li>
+							<li><a href="https://researchbuzz.github.io/blogspace-time-machine/">Blogspace Time Machine</a></li>
+<li><a href="https://researchbuzz.github.io/Blog-Shovel/">Blog Shovel</a></li>
+<li><a href="https://researchbuzz.github.io/sinker-search/">Sinker Search</a></li>
+<li><a href="https://researchbuzz.github.io/The-Anti-Bullseye-Name-Search/">The Anti-Bullseye Name Search</a></li>
+<li><a href="https://researchbuzz.github.io/Back-That-Ask-Up-/">Back That Ask Up</a></li>
+<li><a href="https://researchbuzz.github.io/Twitter-Receipts/">Twitter Receipts</a></li>
+							</ul>
+						</div>
+					</nav>
+					
+					<div class="clr"></div>
+				</div>
+			</div>
+		
+			<div id="footerblurb">
+				<div id="footerblurb-inner">
+				
+					<div class="column">
+						<h2><span>What Is This?</span></h2>
+						<p>The RB Gizmos are a collection of search tools made with JavaScript and HTML.</p>
+					</div>	
+					<div class="column">
+						<h2><span>Why Is This?</span></h2>
+						<p>Because I've been writing about searching and search engines since 1996 and I'm obsessed with them.</p>
+					</div>
+					<div class="column">
+						<h2> </h2>
+						<p><script> </script></p>
+					</div>	
+					
+					<div class="clr"></div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div id="footer-inner">
+					
+					<div class="clr"></div>
+				</div>
+			</footer>
 
-  <br><br>
-  
-    GitHub files - <a href="https://github.com/ResearchBuzz/The-Anti-Bullseye-Name-Search">https://github.com/ResearchBuzz/The-Anti-Bullseye-Name-Search</a>
-  </li>
-   <br><br>
-  <li>
-  <b>Sinker Search</b> -- <a href="https://researchbuzz.github.io/sinker-search/index.html">https://researchbuzz.github.io/sinker-search/index.html</a><br><br> 
-  Takes full advantage of Google's 32-word query limit by letting you choose an emphasized word in your search, which will be repeated until Google's query limit is reached. 
-  <br><br>
-  
-    GitHub files - <a href="https://github.com/ResearchBuzz/sinker-search">https://github.com/ResearchBuzz/sinker-search</a>
-  </li>
-  
-   <br><br>
-  <li>
-  <b>Blogspace Time Machine</b> -- <a href="https://researchbuzz.github.io/blogspace-time-machine/index.html">https://researchbuzz.github.io/blogspace-time-machine/index.html</a><br><br> 
-  A Google filter for exploring recently-created (current month) content in blogspace, with the option of seeing the same search in blogspace from one, three, five, ten, or fifteen years ago.
-  <br><br>
-  
-    GitHub files - <a href="https://github.com/ResearchBuzz/blogspace-time-machine">https://github.com/ResearchBuzz/blogspace-time-machine</a>
-  </li>
-  
-   <br><br>
-  <li>
-  <b>Blog Shovel</b> -- <a href="https://researchbuzz.github.io/Blog-Shovel/index.html">https://researchbuzz.github.io/Blog-Shovel/index.html</a><br><br> 
-  A Google filter unearthing blog content, from the early days of the Web until now. For much older content than the Blogspace Time Machine (goes back to 1995.) 
-  <br><br>
-  
-    GitHub files - <a href="https://github.com/ResearchBuzz/blogspace-time-machine">https://github.com/ResearchBuzz/blogspace-time-machine</a>
-  </li>
 
-</ul>
 
-  </body>
+		</div>
+
+
+
+
+   <script>
+
+function getReceipts(){
+
+// Time to make the base URL! And the donuts!
+
+const apibase = "http://archive.org/wayback/available?url=http://Twitter.com/"
+const suffix = "&timestamp="
+
+// Empty arrays to hold the API
+let waybackdata = {}
+var snaps = {}
+var wbreceipts = {}
+
+// Grabbing all the user data
+var ahandle = document.querySelector(".handle").value  
+var ayear = document.querySelector(".year").value
+var amonth = document.querySelector(".month").value
+var aday = document.querySelector(".day").value
+
+// Open the var, for your, mystery date
+var fulldate = ayear+amonth+aday
+
+// Making a Wayback Machine API query
+var api_url = apibase+ahandle+suffix+fulldate
+
+// Oh great WaybackMachineAPI, tell us things
+fetch(api_url)
+.then(function(response){
+    return response.json()
+})
+.then (function(res){
+    waybackdata=res
+     
+var snaps = waybackdata.archived_snapshots     
+var wbdigging = snaps.closest
+var finalreceipt = wbdigging.url
+
+// Open Wayback Machine URL 
+
+window.open(finalreceipt)
+
+})
+
+}
+       </script>
+
+  
+}
+   
+   </script>
+</body>
 </html>
+
