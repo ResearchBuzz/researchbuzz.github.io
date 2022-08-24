@@ -166,54 +166,6 @@
 
    <script>
 
-function getReceipts(){
-
-// Time to make the base URL! And the donuts!
-
-const apibase = "http://archive.org/wayback/available?url=http://Twitter.com/"
-const suffix = "&timestamp="
-
-// Empty arrays to hold the API
-let waybackdata = {}
-var snaps = {}
-var wbreceipts = {}
-
-// Grabbing all the user data
-var ahandle = document.querySelector(".handle").value  
-var ayear = document.querySelector(".year").value
-var amonth = document.querySelector(".month").value
-var aday = document.querySelector(".day").value
-
-// Open the var, for your, mystery date
-var fulldate = ayear+amonth+aday
-
-// Making a Wayback Machine API query
-var api_url = apibase+ahandle+suffix+fulldate
-
-// Oh great WaybackMachineAPI, tell us things
-fetch(api_url)
-.then(function(response){
-    return response.json()
-})
-.then (function(res){
-    waybackdata=res
-     
-var snaps = waybackdata.archived_snapshots     
-var wbdigging = snaps.closest
-var finalreceipt = wbdigging.url
-
-// Open Wayback Machine URL 
-
-window.open(finalreceipt)
-
-})
-
-}
-       </script>
-
-  
-}
-   
    </script>
 </body>
 </html>
